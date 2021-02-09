@@ -1,0 +1,7 @@
+div.container form button.delete {
+  background-color: rgb(247, 78, 78);
+}
+
+div.container form button.delete:hover {
+  background-color: rgb(246, 108, 108);
+}

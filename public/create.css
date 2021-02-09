@@ -1,0 +1,32 @@
+div.container form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+div.container form label {
+  line-height: 32px;
+  padding-top: 10px;
+}
+
+div.container form input {
+  height: 32px
+}
+
+div.container form button {
+  margin-top: 15px;
+  height: 32px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  background-color: rgba(74, 74, 250, 0.699);
+  color: white;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+div.container form button:hover {
+  background-color: rgba(74, 74, 250, 0.599);
+}

@@ -1,0 +1,50 @@
+div.container {
+  border: 1px solid rgba(104, 104, 104, 0.4);
+  max-width: 840px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 15px;
+}
+
+div.cards {
+  border: 1px solid #eee;
+  width: 85%;
+  margin: 10px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.cards-info { 
+  line-height: 32px;
+}
+
+div.cards-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+a.btn {
+  padding: 8px 16px;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+a.create {
+  margin: 15px;
+  width: 10%;
+  align-self: flex-end;
+}
+
+a.edit, 
+a.create {
+  background-color: rgba(74, 74, 250, 0.699);
+}
+
+a.delete {
+  background-color: rgb(247, 90, 90);
+}
+

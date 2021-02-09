@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<div class="container">
+
+  <a class="btn create" href="/tasks/create">Create</a>
+
+  {% for task in tasks %}
+  <div class="cards">
+    <div class="cards-info">
+      <h2>{{task.title}}</h2>
+      <p>{{task.description}}</p>
+      <p>Deadline: {{task.deadline}}</p>
+      <p>Is task completed? {{task.completed}}</p>
+    </div>
+    <div class="cards-links">
+      <a class="btn edit" href="/tasks/edit/{{task.id}}">Edit</a>
+      <a class="btn delete" href="/tasks/delete/{{task.id}}">Delete</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

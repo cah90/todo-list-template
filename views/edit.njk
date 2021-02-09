@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<div class="container">
+
+  <form action="/tasks?_method=PUT" method="post">
+  <input type="hidden" name="id" value="{{task.id}}">
+
+    <label>Title:</label>
+    <input type="text" name="title" value="{{task.title}}">
+
+    <label>Description:</label>
+    <input type="text" name="description" value="{{task.description}}">
+
+    <label>Deadline:</label>
+    <input type="text" name="deadline" value="{{task.deadline}}">
+
+    <label>Was the task completed?:</label>
+    <input type="text" name="completed" value="{{task.completed}}">
+
+    <button type="submit">Edit</button>
+  </form>
+
+  <form action="/tasks/delete?_method=DELETE" method="post">
+    <input type="hidden" name="id" value="{{task.id}}"/>
+    <button class="delete" type="submit">Delete</button>
+  </form>
+
+</div>
+
+{% endblock %}

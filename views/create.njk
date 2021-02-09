@@ -1,0 +1,24 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<div class="container">
+
+  <form action="/tasks" method="post">
+    <label>Title:</label>
+    <input type="text" name="title">
+
+    <label>Description:</label>
+    <input type="text" name="description">
+
+    <label>Deadline:</label>
+    <input type="text" name="deadline">
+
+    <label>Was the task completed?:</label>
+    <input type="text" name="completed">
+
+    <button type="submit">Save</button>
+  </form>
+</div>
+
+{% endblock %}

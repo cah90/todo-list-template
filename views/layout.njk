@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>  
+<head>
+  {% block head %}
+  <title>Tasks</title>
+  {% endblock %}
+
+  {% include "parts/styles.njk" %}
+</head>
+
+<body>
+  
+  {% include "parts/header.njk" %}
+
+  {% block content %}{% endblock %}
+
+</body>
+</html>
